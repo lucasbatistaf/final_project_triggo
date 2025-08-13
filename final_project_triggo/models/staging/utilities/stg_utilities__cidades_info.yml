@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_utilities__cidades_info
+    description: >
+      A staging table containing info about cities, states and regions of Brasil.
+
+    columns:
+      - name: id_municipio 
+        description: Unique id of each city
+        tests:
+          - not_null
+          - unique
+
+      - name: nome_municipio 
+        description: Name of each city
+
+      - name: id_uf 
+        description: Unique ID of each State
+
+      - name: uf 
+        description: Code of each state
+
+      - name: nome_uf 
+        description: Name of each state
+
+      - name: id_regiao 
+        description: Unique Id of each region
+
+      - name: nome_regiao 
+        description: Name of each region

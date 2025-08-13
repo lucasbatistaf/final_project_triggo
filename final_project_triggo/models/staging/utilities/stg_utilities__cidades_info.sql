@@ -1,6 +1,6 @@
 {{
     config(
-        tags=['staging', 'sul', 'estados']
+        tags=['staging', 'utilities']
     )
 }}
 
