@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: NORDESTE
+    database: RAW_FINAL_TRIGGO_CHALLENGE
+    schema: NORDESTE
+    tables:
+      - name: AL
+      - name: BA
+      - name: CE
+      - name: MA
+      - name: PB
+      - name: PE
+      - name: PI
+      - name: RN
+      - name: SE

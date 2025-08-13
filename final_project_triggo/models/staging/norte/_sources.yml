@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: NORTE
+    database: RAW_FINAL_TRIGGO_CHALLENGE
+    schema: NORTE
+    tables:
+      - name: AC
+      - name: AM
+      - name: AP
+      - name: PA
+      - name: RO
+      - name: RR
+      - name: TOC

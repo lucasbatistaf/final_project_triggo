@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: SUL
+    database: RAW_FINAL_TRIGGO_CHALLENGE
+    schema: SUL
+    tables:
+      - name: RS
+      - name: SC
+      - name: PR

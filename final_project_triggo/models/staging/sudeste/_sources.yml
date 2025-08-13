@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: SUDESTE
+    database: RAW_FINAL_TRIGGO_CHALLENGE
+    schema: SUDESTE
+    tables:
+      - name: ES
+      - name: MG
+      - name: RJ
+      - name: SP

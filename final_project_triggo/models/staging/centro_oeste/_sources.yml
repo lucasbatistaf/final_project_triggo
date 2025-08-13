@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: CENTROOESTE
+    database: RAW_FINAL_TRIGGO_CHALLENGE
+    schema: CENTROOESTE
+    tables:
+      - name: DF
+      - name: GO
+      - name: MS
+      - name: MT
