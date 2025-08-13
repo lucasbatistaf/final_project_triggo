@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_utilities__cid_10_subcategorias
+    description: >
+      A staging table containing info about death causes and their id's.
+
+    columns:
+      - name: id_subcategoria 
+        description: Unique id of each death cause subcategory
+        tests:
+          - not_null
+          - unique
+
+      - name: desc_subcategoria 
+        description: description of each subcategory

@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_norte__pa
+    description: >
+      A staging table containing info about death causes on each state of Brasil.
+
+    columns:
+      - name: data_obito 
+        description: Date of the death of this person
+        tests:
+          - not_null
+
+      - name: data_nascimento 
+        description: Date of the birth of this person
+
+      - name: causa_obito 
+        description: Id of the cause of death
+        tests:
+          - not_null
+
+      - name: sexo 
+        description: biological sex of this person
+
+      - name: raca 
+        description: race of this person
+
+      - name: escolaridade 
+        description: education level of this person
+
+      - name: id_mun_residencia 
+        description: ID of the city of residence of this person
+
+      - name: id_mun_ocorrencia 
+        description: ID of the city of death of this person
