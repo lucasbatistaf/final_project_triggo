@@ -7,21 +7,21 @@
 
 with union_estados as (
     select
-        'RS' as sig_estado,
+        'RS' as uf,
         *
     from {{ ref('stg_sul__rs') }}
 
     UNION ALL
 
     select
-        'SC' as sig_estado,
+        'SC' as uf,
         *
     from {{ ref('stg_sul__sc') }}
 
     UNION ALL
 
     select
-        'PR' as sig_estado,
+        'PR' as uf,
         *
     from {{ ref('stg_sul__pr') }}
 )
@@ -36,5 +36,5 @@ select
     datediff(year,{{ date_fixing('data_nascimento') }}, {{ date_fixing('data_obito') }} ) as idade,
     id_mun_residencia,
     id_mun_ocorrencia,
-    sig_estado
+    uf
 from union_estados

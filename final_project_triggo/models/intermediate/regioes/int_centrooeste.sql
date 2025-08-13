@@ -7,28 +7,28 @@
 
 with union_estados as (
     select
-        'DF' as sig_estado,
+        'DF' as uf,
         *
     from {{ ref('stg_centrooeste__df') }}
 
     UNION ALL
 
     select
-        'GO' as sig_estado,
+        'GO' as uf,
         *
     from {{ ref('stg_centrooeste__go') }}
 
     UNION ALL
 
     select
-        'MS' as sig_estado,
+        'MS' as uf,
         *
     from {{ ref('stg_centrooeste__ms') }}
 
     UNION ALL
 
     select
-        'MT' as sig_estado,
+        'MT' as uf,
         *
     from {{ ref('stg_centrooeste__mt') }}
 )
@@ -43,5 +43,5 @@ select
     datediff(year,{{ date_fixing('data_nascimento') }}, {{ date_fixing('data_obito') }} ) as idade,
     id_mun_residencia,
     id_mun_ocorrencia,
-    sig_estado
+    uf
 from union_estados

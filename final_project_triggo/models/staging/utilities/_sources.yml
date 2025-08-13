@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: UTILITIES
+    database: RAW_FINAL_TRIGGO_CHALLENGE
+    schema: UTILITIES
+    tables:
+      - name: CID_10_SUBCATEGORIAS
+      - name: CIDADES_INFO
