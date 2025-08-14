@@ -1,4 +1,4 @@
-lçkçkçklçkk  # Projeto Final do Bootcamp da Triggo.ai
+# Projeto Final do Bootcamp da Triggo.ai
 
 ### Objetivo
 
