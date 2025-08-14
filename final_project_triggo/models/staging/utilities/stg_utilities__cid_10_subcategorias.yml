@@ -6,11 +6,11 @@ models:
       A staging table containing info about death causes and their id's.
 
     columns:
-      - name: id_subcategoria 
+      - name: id_causa_obito 
         description: Unique id of each death cause subcategory
         tests:
           - not_null
           - unique
 
-      - name: desc_subcategoria 
+      - name: desc_causa_obito 
         description: description of each subcategory
