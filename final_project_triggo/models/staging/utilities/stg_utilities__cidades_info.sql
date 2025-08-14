@@ -7,7 +7,7 @@
 
 with source as (
     select
-        id_municipio,
+        left(id_municipio::string, 6)::integer as id_municipio,
         replace(nome_municipio, '"', '') as nome_municipio,
         id_uf,
         uf,

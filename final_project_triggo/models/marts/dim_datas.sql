@@ -13,11 +13,11 @@ with regioes as (
 )
 
 select
-    replace(data_obito, '-', '')::integer as id_data_obito,
-    data_obito,
-    date_part(day, data_obito) as dia_obito,
-    date_part(month, data_obito) as mes_obito,
-    date_part(year, data_obito) as ano_obito,
-    date_part(quarter, data_obito) as trimestre_obito    
+    replace(data_obito, '-', '')::integer as id_data,
+    data_obito as datas,
+    date_part(day, data_obito) as dia,
+    date_part(month, data_obito) as mes,
+    date_part(year, data_obito) as ano,
+    date_part(quarter, data_obito) as trimestre   
 from regioes
 where rn = 1
