@@ -1,7 +1,7 @@
 {{
     config(
         tags=['intermediate', 'norte', 'regioes'],
-        materialized="table"
+        materialized='table'
     )
 }}
 
@@ -55,7 +55,7 @@ with union_estados as (
 )
 
 select
-    {{ date_fixing('data_obito') }} as data_obitos,
+    {{ date_fixing('data_obito') }} as data_obito,
     causa_obito,
     sexo,
     raca,
