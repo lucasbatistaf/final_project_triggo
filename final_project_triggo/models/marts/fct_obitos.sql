@@ -13,7 +13,8 @@ with causa_obito as (
 
 datas as (
     select
-        id_data
+        id_data,
+        datas
     from {{ ref('dim_datas') }}
 ),
 
