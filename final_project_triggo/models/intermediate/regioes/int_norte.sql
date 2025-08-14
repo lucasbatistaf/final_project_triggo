@@ -64,5 +64,5 @@ select
     datediff(year,{{ date_fixing('data_nascimento') }}, {{ date_fixing('data_obito') }} ) as idade,
     id_mun_residencia,
     id_mun_ocorrencia,
-    uf
+    uf as uf_residencia
 from union_estados
