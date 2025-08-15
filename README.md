@@ -32,6 +32,13 @@ Os arquivos foram enviados para o Snowflake utilizando o conector disponibilizad
 ---  
 
 
+### Conversão dos dados do DataSUS
+
+Os dados vindos do DataSUS, baixados através do site [DataSUS/Transferencia de Arquivo](https://datasus.saude.gov.br/transferencia-de-arquivos/) são disponibilizados no formato .dbc, que por sua vez só pode ser aberto por um programa disponibilizado pelo próprio site ou pode ser convertido em .csv através de diversas técnicas. Utilizei para conversão em .csv este [projeto](https://github.com/greatjapa/dbc2csv), o qual tornou possivel o uso desses dados no meu projeto.
+
+---
+
+
 ### Modelagem dos Dados
 
 Utilizando a conexão com o Snowflake, fiz a criação das staging dentro do dbt para consolidação desses dados para dentro do projeto, no ratio de 1:1 stagings e bases de dados de dados cada estado.
