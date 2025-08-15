@@ -46,3 +46,5 @@ A partir deste ponto, a modelagem chega ao estágio de Fatos e Dimensões e a mo
 - mart_geral: contendo informações gerais sobre os óbitos
 - mart_tendencias: contendo a informação a principal causa de morte de um grupo de pessoas e sua evolução ao longo do tempo
 
+
+![fact and dim tables](https://github.com/lucasbatistaf/final_project_triggo/blob/main/fact%20and%20dim.png)
